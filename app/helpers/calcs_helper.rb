@@ -8,7 +8,7 @@ module CalcsHelper
     when "multiplication"
       @total = @price1 * @price2
     when "division"
-      @total = @price1 / @price2s
+      @total = @price1 / @price2
     end
   end
 end
