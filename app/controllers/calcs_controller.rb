@@ -18,7 +18,7 @@ class CalcsController < ApplicationController
       @cal == "division"
       @result = @num1 / @num2
     else
-      @result = "数値が正しくありません"
+      @result = "URLが正しくありません"
     end
   end
 
