@@ -1,0 +1,15 @@
+current directory: /Users/takahashikeigo/ruby-camp/camp_weekday_task3/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+/Users/takahashikeigo/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190306-43637-jbzcbu.rb extconf.rb
+creating Makefile
+
+current directory: /Users/takahashikeigo/ruby-camp/camp_weekday_task3/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/takahashikeigo/ruby-camp/camp_weekday_task3/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/takahashikeigo/ruby-camp/camp_weekday_task3/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190306-43637-17pnblo/bootsnap
