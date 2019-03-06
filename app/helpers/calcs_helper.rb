@@ -1,4 +1,5 @@
 module CalcsHelper
+  #@opraterの値によって処理を分岐
   def total
     case @oprator
     when "addition"
