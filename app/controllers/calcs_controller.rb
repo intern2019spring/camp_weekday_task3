@@ -3,7 +3,7 @@ class CalcsController < ApplicationController
   def show
     @num1 = params[:num1].to_i
     @num2 = params[:num2].to_i
-    @cal = params[:cal].to_s
+    @cal = params[:cal]
 
     if
       @cal == "addition"
