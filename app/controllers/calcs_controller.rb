@@ -12,7 +12,11 @@ class CalcsController < ApplicationController
     elsif @cal == "multiplication"
       @num1 * @num2
     elsif @cal == "division"
-      @num1 / @num2
+      begin
+      "#{@num1 / @num2}".."#{@num1 % @num2}"
+      rescue ZeroDivisionError
+      "divided by 0"
+      end
     else
       "URLが正しくありません"
     end
