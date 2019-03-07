@@ -5,20 +5,16 @@ class CalcsController < ApplicationController
     @num2 = params[:num2].to_i
     @cal = params[:cal]
 
-    if
-      @cal == "addition"
-      @result = @num1 + @num2
-    elsif
-      @cal== "subtraction"
-      @result = @num1 - @num2
-    elsif
-      @cal == "multiplication"
-      @result = @num1 * @num2
-    elsif
-      @cal == "division"
-      @result = @num1 / @num2
+    @result = if @cal == "addition"
+      @num1 + @num2
+    elsif @cal== "subtraction"
+      @num1 - @num2
+    elsif @cal == "multiplication"
+      @num1 * @num2
+    elsif @cal == "division"
+      @num1 / @num2
     else
-      @result = "URLが正しくありません"
+      "URLが正しくありません"
     end
   end
 
