@@ -6,21 +6,19 @@ module Common
     num2 = params[:num2].to_i
     @cal = params[:cal]
 
-    @result = 
-      if @cal == "addition"
-        num1 + num2
-      elsif @cal == "subtraction"
-        num1 - num2
-      elsif @cal == "multiplication"
-        num1 * num2
-      elsif @cal == "division"
-        begin
-        "#{num1 / num2}".."#{num1 % num2}"
-        rescue ZeroDivisionError
-        "divided by 0"
-        end
-      else
-        "URLが正しくありません"
-      end
+    @result = case @cal
+              when "addition"
+                num1 + num2
+              when "subtraction"
+                num1 - num2
+              when "multiplication"
+                num1 * num2
+              when "division"
+                begin
+                "#{num1 / num2}".."#{num1 % num2}"
+                rescue ZeroDivisionError
+                "divided by 0"
+                end
+              end
   end
 end
